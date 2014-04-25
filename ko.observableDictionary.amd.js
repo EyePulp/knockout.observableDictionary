@@ -149,7 +149,6 @@ define(['knockout',], function(ko) {
             ko.utils.arrayForEach(items, function (item) {
                 var key = ko.utils.unwrapObservable(item.key);
                 var value = ko.utils.unwrapObservable(item.value);
-                console.log('toJS==>',key,value);
                 result[key] = value;
             });
 
